@@ -1,0 +1,172 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #888;
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+div {
+  text-align: center;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 300px;
+  margin-top: 20px;
+}
+
+#root{
+  padding: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 18px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4CAF50;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn:active {
+  background-color: #45a049;
+}
+
+.btnSubmit {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btnSubmit:hover {
+  background-color: #1976D2;
+}
+
+.btnSkip {
+  background-color: #FF5722;
+  color: white;
+}
+
+.btnSkip:hover {
+  background-color: #E64A19;
+}
+
+.btnRestart {
+  background-color: #9C27B0;
+  color: white;
+}
+
+.btnRestart:hover {
+  background-color: #7B1FA2;
+}
+
+.game-info {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.scoreboard {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.feedbackMessage {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ffeb3b;
+  border-radius: 5px;
+  text-align: center;
+  color: #d32f2f;
+}
+
+.feedbackMessage.correct {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.feedbackMessage.incorrect {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.feedbackMessage.strike {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  div {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
